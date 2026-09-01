@@ -4,3 +4,33 @@ body {
     color: white;
     font-family: Arial, sans-serif;
 }
+.tabs {
+    height: 50px;
+    background: #0b1228;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 0 10px;
+}
+
+.tab {
+    height: 36px;
+    padding: 0 20px;
+    background: #0b1228;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    align-items: center;
+    transition: 0.3s ease;
+}
+
+.tab.active {
+    background: #1d2d58;
+}
+
+.new-tab {
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
