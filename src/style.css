@@ -34,3 +34,10 @@ body {
     font-size: 24px;
     cursor: pointer;
 }
+.tab {
+    transition: 0.3s ease;
+}
+
+.tab.active {
+    transform: scaleY(1.08);
+}
