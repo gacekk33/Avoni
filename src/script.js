@@ -7,3 +7,6 @@ tabs.forEach(tab => {
     });
 });
 const newTabButton = document.querySelector(".new-tab");
+newTabButton.addEventListener("click", () => {
+    console.log("Kliknięto +");
+});
