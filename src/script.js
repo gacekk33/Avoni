@@ -8,5 +8,9 @@ tabs.forEach(tab => {
 });
 const newTabButton = document.querySelector(".new-tab");
 newTabButton.addEventListener("click", () => {
-    console.log("Kliknięto +");
+    const newTab = document.createElement("div");
+    newTab.classList.add("tab");
+    newTab.textContent = "Nowa karta";
+
+    document.querySelector(".tabs").insertBefore(newTab, newTabButton);
 });
