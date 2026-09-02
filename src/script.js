@@ -6,3 +6,4 @@ tabs.forEach(tab => {
         tab.classList.add("active");
     });
 });
+const newTabButton = document.querySelector(".new-tab");
