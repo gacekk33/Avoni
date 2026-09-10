@@ -2,8 +2,7 @@
 body {
     margin: 0;
     background-color: #101a35;
-    background-image:
-        linear-gradient(to bottom, #1684d8, #101a35);
+    background-image: linear-gradient(to bottom, #1684d8, #101a35);
     color: white;
     font-family: Arial, sans-serif;
     min-height: 100vh;
@@ -51,20 +50,5 @@ body {
 
 .new-tab:hover {
     transform: scale(1.15);
-}
-
-/* Delikatna siatka */
-body::after {
-    content: "";
-    position: fixed;
-    top: 58px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image:
-        linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
-    background-size: 40px 40px;
-    pointer-events: none;
 }
 ```
