@@ -1,13 +1,9 @@
 ```css
 body {
     margin: 0;
-    background:
-        linear-gradient(
-            to bottom,
-            #1684d8 0%,
-            #173f78 35%,
-            #101a35 75%
-        );
+    background-color: #101a35;
+    background-image:
+        linear-gradient(to bottom, #1684d8, #101a35);
     color: white;
     font-family: Arial, sans-serif;
     min-height: 100vh;
@@ -33,7 +29,6 @@ body {
     align-items: center;
     transition: 0.3s ease;
     border: 1px solid #172344;
-    border-bottom: none;
 }
 
 /* Aktywna karta */
@@ -58,14 +53,17 @@ body {
     transform: scale(1.15);
 }
 
-/* Siatka w głównym interfejsie */
+/* Delikatna siatka */
 body::after {
     content: "";
     position: fixed;
-    inset: 58px 0 0 0;
+    top: 58px;
+    left: 0;
+    right: 0;
+    bottom: 0;
     background-image:
-        linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+        linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
     background-size: 40px 40px;
     pointer-events: none;
 }
